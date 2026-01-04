@@ -1,34 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './index.css'
+import { Navbar } from './components/Layout/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="min-h-screen bg-brand-dark">
+      <Navbar />
+      
+      <main>
+        {/* Section de teste para ver a Navbar fixa no topo */}
+        <section id="home" className="h-screen flex flex-col items-center justify-center">
+          <h1 className="text-5xl font-black text-brand-accent uppercase">
+            Guilherme Patrick
+          </h1>
+          <p className="text-slate-400 mt-4">Analista de Dados & Business Intelligence</p>
+        </section>
+
+        {/* Espaçador para testar o scroll depois */}
+        <section id="about" className="h-screen bg-brand-card flex items-center justify-center">
+          <h2 className="text-3xl font-bold">Sobre Mim</h2>
+        </section>
+      </main>
+    </div>
   )
 }
 
