@@ -2,6 +2,7 @@ import './index.css'
 import { Navbar } from './components/Layout/Navbar'
 import { Home } from './components/Sections/Home'
 import { About } from './components/Sections/About'
+import { Skills } from './components/Sections/Skills'
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         {/* 3. SKILLS: Hard skills (SQL, Power BI, Python, etc) e ferramentas */}
         {/* <Skills /> */}
         <section id="skills" className="h-screen flex items-center justify-center border-b border-white/5">
-          <h2 className="text-3xl font-bold">Habilidades (Em construção)</h2>
+          <Skills/>
         </section>
 
         {/* 4. PROJECTS: Grid de cards que abrem os dashboards no Modal */}

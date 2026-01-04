@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(), // Adicione esta linha aqui
   ],
+  base: './', // Isso garante que os caminhos dos arquivos fiquem relativos
 })
